@@ -5,7 +5,8 @@
 - Mise en place de l'éditeur de code et conseils  
 
 ## 1. Rappel JavaScript moderne
-- Let, const et var  
+- let vs var  
+- const
 - Les template strings  
 - Les différences entre les fonctions fléchées et les fonctions classiques  
 - Le spread operator  
