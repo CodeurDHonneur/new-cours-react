@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Différences Fonctions Classiques vs Fléchées</title>
+  <style>
+    body { font-family: sans-serif; padding: 30px; background: #fefefe; }
+    h2 { color: #333; }
+    section { margin-bottom: 25px; }
+    button { margin: 10px 0; padding: 8px 16px; border-radius: 6px; border: none; background: #007BFF; color: white; cursor: pointer; }
+    button:hover { background: #0056b3; }
+    pre { background: #f4f4f4; padding: 15px; border-radius: 8px; font-size: 14px; white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+
+  <h1>🧠 Fonctions Classiques vs Fonctions Fléchées</h1>
+
+  <section>
+    <h2>1️⃣ Contexte de <code>this</code></h2>
+    <p>Observe comment <code>this</code> se comporte différemment.</p>
+    <button onclick="testThis()">Tester</button>
+    <pre id="thisOutput"></pre>
+  </section>
+
+  <section>
+    <h2>2️⃣ Gestion de <code>arguments</code></h2>
+    <p>Les fonctions classiques ont <code>arguments</code>, les fléchées non.</p>
+    <button onclick="testArguments()">Tester</button>
+    <pre id="argsOutput"></pre>
+  </section>
+
+  <section>
+    <h2>3️⃣ Constructeur avec <code>new</code></h2>
+    <p>Peut-on instancier une fonction avec <code>new</code> ?</p>
+    <button onclick="testConstructor()">Tester</button>
+    <pre id="constructorOutput"></pre>
+  </section>
+
+  <section>
+    <h2>4️⃣ Hoisting</h2>
+    <p>Quelle fonction peut être appelée avant sa définition ?</p>
+    <button onclick="testHoisting()">Tester</button>
+    <pre id="hoistingOutput"></pre>
+  </section>
+
+  <section>
+    <h2>5️⃣ Syntaxe concise</h2>
+    <p>Comparer les deux syntaxes pour une même logique.</p>
+    <button onclick="testSyntax()">Tester</button>
+    <pre id="syntaxOutput"></pre>
+  </section>
+
+  <script>
+    function testThis() {
+      const output = document.getElementById('thisOutput');
+      output.textContent = '';
+
+      const obj = {
+        name: 'MonObjet',
+        classic: function() {
+          return `Classique: this.name = ${this.name}`;
+        },
+        arrow: () => {
+          return `Fléchée: this.name = ${this?.name}`;
+        }
+      };
+
+      output.textContent += obj.classic() + '\n';
+      output.textContent += obj.arrow();
+    }
+
+    function testArguments() {
+      const output = document.getElementById('argsOutput');
+      output.textContent = '';
+
+      function classique() {
+        return `Classique: arguments = [${[...arguments]}]`;
+      }
+
+      const flechee = (...args) => {
+        try {
+          return `Fléchée: arguments = ${arguments}`;
+        } catch {
+          return `Fléchée: 'arguments' n'existe pas, mais on a args = [${args}]`;
+        }
+      }
+
+      output.textContent += classique(1, 2, 3) + '\n';
+      output.textContent += flechee(4, 5, 6);
+    }
+
+    function testConstructor() {
+      const output = document.getElementById('constructorOutput');
+      output.textContent = '';
+
+      function PersonClassic(name) {
+        this.name = name;
+      }
+
+      const PersonArrow = (name) => {
+        this.name = name;
+      }
+
+      try {
+        const p1 = new PersonClassic("Alice");
+        output.textContent += `Classique: p1.name = ${p1.name}\n`;
+      } catch (e) {
+        output.textContent += `Classique: Erreur - ${e.message}\n`;
+      }
+
+      try {
+        const p2 = new PersonArrow("Bob");
+        output.textContent += `Fléchée: p2.name = ${p2.name}`;
+      } catch (e) {
+        output.textContent += `Fléchée: Erreur - ${e.message}`;
+      }
+    }
+
+    function testHoisting() {
+      const output = document.getElementById('hoistingOutput');
+      output.textContent = '';
+
+      try {
+        const result = sayHello();
+        output.textContent += `Classique hoistée: ${result}\n`;
+      } catch (e) {
+        output.textContent += `Classique hoistée: Erreur - ${e.message}\n`;
+      }
+
+      try {
+        const result = sayHi();
+        output.textContent += `Fléchée (non hoistée): ${result}`;
+      } catch (e) {
+        output.textContent += `Fléchée (non hoistée): Erreur - ${e.message}`;
+      }
+
+      function sayHello() {
+        return "Bonjour depuis une fonction classique.";
+      }
+
+      const sayHi = () => "Salut depuis une fonction fléchée.";
+    }
+
+    function testSyntax() {
+      const output = document.getElementById('syntaxOutput');
+      output.textContent = '';
+
+      function additionClassique(a, b) {
+        return a + b;
+      }
+
+      const additionFlechee = (a, b) => a + b;
+
+      output.textContent += `Classique: 2 + 3 = ${additionClassique(2, 3)}\n`;
+      output.textContent += `Fléchée: 2 + 3 = ${additionFlechee(2, 3)}`;
+    }
+  </script>
+</body>
+</html>
