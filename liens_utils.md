@@ -6,3 +6,7 @@
 * Authentification React - Firebase : https://www.youtube.com/watch?v=boZJtNzRCDQ&list=PLpG9MHuD988g-7vniIEs0yk8bmxL35v7c&index=14
 
 * Découverte matérial UI : https://www.youtube.com/watch?v=fzxEECHnsvU&list=PLj-4DlPRT48nfYgDK00oTjlDF4O0ZZyG8&index=28
+
+* tour website : https://www.youtube.com/watch?v=309beMyhXtg
+
+* todolist : https://www.youtube.com/watch?v=C5hQxdA_eY0
