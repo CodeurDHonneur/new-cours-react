@@ -5,17 +5,14 @@
 - Mise en place de l'éditeur de code et conseils  
 
 ## 1. Rappel JavaScript moderne
-- let vs var  
-- const
-- Les template strings  
-- Les différences entre les fonctions fléchées et les fonctions classiques  
-- Le spread operator  
-- Le destructuring  
-- Le rest operator et les paramètres par défaut  
-- Les fonctions pures  
-- Les fonctions d'ordre supérieur  
-- Les méthodes des tableaux partie 1  
-- Les méthodes des tableaux partie 2  
+- let vs var  (ok) 1
+- const (ok) 2
+- Les template strings  (ok) 3
+- Les différences entre les fonctions fléchées et les fonctions classiques  (ok) 4
+- spread & rest operator  (ok) 5
+- Les fonctions pures  (ok) 6
+- Les fonctions d'ordre supérieur  (ok) 7
+- Les tableaux  (ok) 8
 - Astuces syntaxiques  
 - La méthode fetch()  
 - Utiliser les modules ES6  

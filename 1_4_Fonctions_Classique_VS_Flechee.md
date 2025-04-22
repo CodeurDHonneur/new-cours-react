@@ -498,28 +498,3 @@ async function fetchData() {
 })();
 ```
 
-### Exercices 
-
-##### Exercice 1 : Téléportation et Fusion
-
-Difficulté: Medium
-
-Il vous est donné deux tableaux et un index. Créez une fonction frankenSplice(arr1, arr2, index). Copiez dans l'ordre chaque élément du premier tableau dans le second tableau. Commencez par insérer les éléments à l'index n du second tableau. Retournez le tableau final. NB: Les tableaux de départ reste inchangés après l'exécution des fonctions.
-
-Tests:
-
-frankenSplice([1, 2, 3], [4, 5], 1) devrait retourner [4, 1, 2, 3, 5] frankenSplice([1, 2], ["a", "b"], 1) devrait retourner ["a", 1, 2, "b"] frankenSplice(["claw", "tentacle"], ["head", "shoulders", "knees", "toes"], 2) devrait retourner ["head", "shoulders", "claw", "tentacle", "knees", "toes"] Tous les éléments du premier tableau devrait être additionnés au second tout en respectant l'ordre de départ. frankenSplice([1, 2, 3, 4], [], 0) devrait retourner [1, 2, 3, 4]
-
-##### Exercice 2 :  Où devrais-je être
-
-Difficulté: Moyenne
-
-Créez une fonction getIndexToIns(arr, toInsert). Renvoiez l'indice le plus bas auquel une valeur (deuxième argument) doit être insérée dans un tableau (premier argument) une fois qu'il a été trié. La valeur renvoyée doit être un nombre.
-
-Par exemple, getIndexToIns([1,2,3,4], 1.5) doit retourner 1 car il est supérieur à 1(index 0), mais inférieur à 2(index 1).
-
-De même, getIndexToIns([20,3,5], 19) devrait retourner 2 car une fois le tableau trié, il ressemblera à [3,5,20] et 19 est inférieur à 20 (index 2) et supérieur à 5 (index 1).
-
-Tests:
-
-getIndexToIns([10, 20, 30, 40, 50], 35) devrait renvoyer 3. getIndexToIns([10, 20, 30, 40, 50], 35) devrait renvoyer un nombre. getIndexToIns([10, 20, 30, 40, 50], 30) devrait renvoyer 2. getIndexToIns([10, 20, 30, 40, 50], 30) devrait renvoyer un nombre. getIndexToIns([40, 60], 50) devrait renvoyer 1. getIndexToIns([40, 60], 50) devrait renvoyer un nombre. getIndexToIns([3, 10, 5], 3) devrait renvoyer 0. getIndexToIns([3, 10, 5], 3) devrait renvoyer un nombre. getIndexToIns([5, 3, 20, 3], 5) devrait renvoyer 2. getIndexToIns([5, 3, 20, 3], 5) devrait renvoyer un nombre. getIndexToIns([2, 20, 10], 19) devrait renvoyer 2. getIndexToIns([2, 20, 10], 19) devrait renvoyer un nombre. getIndexToIns([2, 5, 10], 15) devrait renvoyer 3. getIndexToIns([2, 5, 10], 15) devrait renvoyer un nombre. getIndexToIns([], 1) devrait renvoyer 0. getIndexToIns([], 1) devrait renvoyer un nombre.

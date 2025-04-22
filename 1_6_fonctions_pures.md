@@ -1,0 +1,146 @@
+### Qu'es-t-ce qu'un éffet secondaire ?
+
+Un effet secondaire se produit chaque fois qu'une fonction affecte des parties du programme qui ne sont pas strictement liées à sa tâche principale. 
+
+Exemple : 
+```js
+let total = 0
+
+function addToTotal(amount) {
+  total += amount
+  console.log(`Total: ${total}`)
+}
+
+```
+
+### Pourquoi éviter les effets secondaires ?
+
+##### 1. Prévisibilité et simplicité : une fonction sans effet secondaire est simple à comprendre.
+En passant une entrée donnée, on obtient toujours le même résultat sans se soucier de l'impact sur d'autres parties du programme. Le code est prévisible et réduit ainsi les surprises.
+
+##### 2. Débogage plus facile
+Dans le cas où on aurait une variable globale avec une valeur incorrecte mais que celle-ci soit manipulée par plusieurs fonctions avec des effets secondaires, retrouver l'origine du bug peut s'avérer un véritable casse-tête.
+
+##### 3. Tests simplifiés 
+Tester une fonction avec des effets secondaires est compliqué. Aucun test ne pourra se faire sans la prise en compte de l'impact qu'elle a sur le reste du code.
+
+### Comment éviter les effets secondaires ?
+Le principe est simple : **les fonctions doivent être pures**.
+
+Exemple : 
+```js
+const add = (x, y) => {
+    return x + y;
+}
+
+console.log(add(1, 2));
+```
+Une fonction pure est une fonction qui, pour un ensemble d’entrées données, retourne **toujours le même résultat** **sans modifier l'état** global du programme.
+
+Une mauvaise pratique en programmation : 
+
+```js
+function incrementAge(person) {
+  person.age++
+}
+
+```
+Par la modification de l'objet passé en argument, on introduit un effet secondaire subtil. La bonne pratique, c'est de retourner une nouvelle instance de l'objet avec la valeur modifiée, au lieu de changer l'objet d'origine.
+
+```js
+function incrementAge(person) {
+  return { age: person.age + 1 }
+}
+
+```
+
+Un autre exemple mais cette fois avec un tableau : 
+
+```js
+const movies =[];
+
+const addMovie = (movie) => {
+    return movies.push(movie);
+}
+
+addMovie("film 1");
+// addMovies("film 1");
+
+
+console.log("movies", movies);
+```
+
+Ici, `addMovie` est une fonction `impure` parce qu'elle modifie la valeur globale `movies`.  La bonne pratique serait de faire la chose suivante : 
+
+```js
+const movies = [];
+
+//Ainsi notre fonction reste pure quoi qu'il arrive
+const addMovie = (movie, movies) => {
+  return movies.push(movie);
+}
+
+movies = addMovie("film 1");
+```
+
+On ne se mentira pas, il existe des cas où des effets secondaires sont inévitables, comme l'écriture dans une base de données ou l'appel à une API néanmoins, travaillons à écrire du code propre en suivant au maximum cette règle.
+
+### Exercices de compréhension
+
+📌 Exemple très simple
+Exo 1
+```js
+let tauxTVA = 0.2;
+
+function ajouterTVA(prix) {
+  return prix + prix * tauxTVA;
+}
+
+```
+Exo 2
+```js
+function doublerElements(tab) {
+  for (let i = 0; i < tab.length; i++) {
+    tab[i] *= 2;
+  }
+  return tab;
+}
+
+```
+
+🟡 Intermédiaire
+Exo 3 
+```js
+function tirerNumero() {
+  return Math.floor(Math.random() * 100);
+}
+```
+
+
+Exo 4 
+```js
+function tempsEcoule(timestampDepart) {
+  return Date.now() - timestampDepart;
+}
+```
+
+
+Exo 5 
+```js
+function ajouterPoints(joueur, points) {
+  joueur.score += points;
+  return joueur;
+}
+```
+
+
+Exo 6 
+```js
+let utilisateur = { nom: "Sarah", age: 29 };
+
+function anniversaire() {
+  utilisateur.age += 1;
+  console.log(`Bon anniversaire ${utilisateur.nom} ! Tu as ${utilisateur.age} ans.`);
+}
+
+```
