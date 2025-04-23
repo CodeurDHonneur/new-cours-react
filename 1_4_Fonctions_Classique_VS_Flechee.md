@@ -483,17 +483,6 @@ class Person {
 }
 ```
 
-* **Fonction génératrice** (Generator Function)
-```js
-function* compteur() {
-  yield 1;
-  yield 2;
-  yield 3;
-}
-```
-📌 Peut être "pausée" et "reprendre" grâce à yield
-✅ Parfait pour des flux, des itérations personnalisées, ou de l’asynchrone avancé
-
 * **Fonction asynchrone** (async function)
 ```js
 async function fetchData() {
@@ -508,3 +497,4 @@ async function fetchData() {
   console.log("Exécutée immédiatement !");
 })();
 ```
+
