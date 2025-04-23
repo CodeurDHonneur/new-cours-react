@@ -156,25 +156,20 @@
       output.textContent += `Fléchée: 2 + 3 = ${additionFlechee(2, 3)}`;
     }
   
-    const users = [
-    {
-        id: 1,
-        name: "Michel",
-        age: 55
-    },
-    {
-        id: 2,
-        name: "Didier",
-        age: 34
-    },
-    {
-        id: 3,
-        name: "Jean",
-        age: 77
-    },
-];
+//     fetch('https://fakestoreapi.com/products/1')
+// .then(response => response.json())
+// .then(data => console.log(data))
+// .catch(error => console.log('Error', error));
 
-console.table(users);
+const updatedData = { id: 1, price: 300 };
+
+fetch('https://fakestoreapi.com/products/1', {
+    method: 'PUT',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(updatedData)
+})
+    .then(response => response.json())
+    .then(result => console.log(result));
 
   </script>
 </body>

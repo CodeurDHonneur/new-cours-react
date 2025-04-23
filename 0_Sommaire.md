@@ -44,7 +44,7 @@
 - Les inputs contrôlés  
 - Les inputs incontrôlés  
 
-## 5. React dans le détail
+## 4. React dans le détail
 - Les Fragments  
 - Les règles des hooks  
 - Le hook useEffect  
@@ -64,14 +64,14 @@
 - Utiliser des CSS Modules  
 - Utiliser TailwindCSS  
 
-## Créer des composants courants
+<!-- ## Créer des composants courants (pourrait être retiré)
 - Coder une fenêtre modale  
 - Créer un système d'onglets  
 - Coder une Navbar responsive  
 - Mise en place d'un système de validation  
-- Contrôler les inputs  
-- Créer les conditions de validation  
-- Montrer les messages d'erreur  
+- Contrôler les inputs  ****
+- Créer les conditions de validation  ****
+- Montrer les messages d'erreur  **** -->
 
 ## React Router
 - Mettre en place React Router  
@@ -85,20 +85,20 @@
 - Création du contexte  
 
 ## Redux Toolkit
-- Introduction et mise en place  
-- Architecture classique  
+<!-- - Introduction et mise en place   -->
+<!-- - Architecture classique   -->
 - Envoyer une action avec dispatch  
-- Créer l'UI du projet Fruity  
-- Création des données de l'inventaire  
-- Ajouter et enlever un fruit  
-- Afficher les fruits sélectionnés  
+<!-- - Créer l'UI du projet Fruity   -->
+<!-- - Création des données de l'inventaire   -->
+<!-- - Ajouter et enlever un fruit   -->
+<!-- - Afficher les fruits sélectionnés   -->
 - Comprendre les extraReducers  
 - Utiliser un custom middleware  
 - Utiliser le middleware "logger"  
 - Appeler une API avec le thunk middleware  
-- Afficher les données  
-- Créer un chrono  
-
+<!-- - Afficher les données   -->
+<!-- - Créer un chrono   -->
+<!-- 
 ## Projet : Boxy-generator
 - Mise en place du projet  
 - Mise en place du store Redux et des states  
@@ -117,4 +117,7 @@
 - Activer la modale  
 - Créer le contenu de la modale  
 - Copier les valeurs et empêcher le scroll quand la modale est ouverte  
-- Gérer la suppression des ombres  
+- Gérer la suppression des ombres   
+
+Pourrait servir dans la réalisation du projet 
+- -->
