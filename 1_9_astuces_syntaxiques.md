@@ -1,4 +1,4 @@
-### Astuce 1 : Merge d'objet 
+### Astuce 1 
 
 ```js
 const user1 = {
@@ -18,7 +18,7 @@ const mergeObject = {
 ```
 
 
-### Astuce 2 : Merge d'objet 
+### Astuce 2
 
 ```js
 function createUser(firstName, lastName, age, email, password){
@@ -51,7 +51,7 @@ createUser({
 ```
 
 
-### Astuce 3 : parourir un objet
+### Astuce 3 
 
 ```js
 const users = [
@@ -84,12 +84,9 @@ for(const [index, { name, age }] of Object.entries(users)){
 
 ```
 
-### Astuce 4 : déclaratif ou impératif 
-
+### Astuce 4 
 ```js
 const usersEmpty = [undefined, null, undefined];
-
-
 
 const isEmpty = (arr) => {
     let empty = true;

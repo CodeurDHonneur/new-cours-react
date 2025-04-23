@@ -5,17 +5,17 @@
 - Mise en place de l'éditeur de code et conseils  
 
 ## 1. Rappel JavaScript moderne
-- let vs var  (ok) 1
-- const (ok) 2
-- Les template strings  (ok) 3
-- Les différences entre les fonctions fléchées et les fonctions classiques  (ok) 4
-- spread & rest operator  (ok) 5
-- Les fonctions pures  (ok) 6
-- Les fonctions d'ordre supérieur  (ok) 7
-- Les tableaux  (ok) 8
+- let vs var  
+- const 
+- Les template strings  
+- Les différences entre les fonctions fléchées et les fonctions classiques  
+- spread & rest operator  
+- Les fonctions pures  
+- Les fonctions d'ordre supérieur  
+- Les tableaux  
 - Astuces syntaxiques  
 - La méthode fetch()  
-- Utiliser les modules ES6  
+
 
 ## 2. Créer une app avec React
 - Qu'est-ce qu'une application web ?  
@@ -28,6 +28,7 @@
 - Pourquoi faut-il toujours retourner un seul élément ?  
 - La syntaxe et les fonctionnalités JSX  
 - Notre premier composant  
+- Explication de React.StrictMode 
 - Utiliser des évènements  
 - Le state  
 - Les props  
@@ -42,13 +43,6 @@
 - Utiliser useRef() pour sélectionner un élément  
 - Les inputs contrôlés  
 - Les inputs incontrôlés  
-
-## 4. Projet : To-do list
-- Mise en place  
-- Création du contenu  
-- Explication de React.StrictMode  
-- Création et suppression d'éléments  
-- Ajouter un élément et validation  
 
 ## 5. React dans le détail
 - Les Fragments  
