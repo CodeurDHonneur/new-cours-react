@@ -1,10 +1,4 @@
-Parfait, tu veux structurer un petit cours clair et pédagogique pour introduire React et Vite. Voici une proposition bien organisée, avec des explications simples pour chaque point :
-
----
-
 ## 📘 2. Créer une app avec React
-
----
 
 ### 🧠 Qu'est-ce qu'une application web ?
 
