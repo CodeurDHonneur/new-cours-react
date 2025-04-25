@@ -35,8 +35,6 @@
 - Utiliser du CSS  
 - Créer une liste d'éléments  
 - Utiliser des images  
-- Rendu conditionnel avec if  ok
-- Rendu conditionnel avec une opération ternaire  ok
 - Rendu conditionnel avec une opération de court-circuit  
 - Exemple de toggle d'une classe HTML  
 - Utiliser useRef() pour une valeur persistante  
