@@ -5,55 +5,55 @@
 - Mise en place de l'éditeur de code et conseils  
 
 ## 1. Rappel JavaScript moderne
-- let vs var  
-- const 
-- Les template strings  
-- Les différences entre les fonctions fléchées et les fonctions classiques  
-- spread & rest operator  
-- Les fonctions pures  
-- Les fonctions d'ordre supérieur  
-- Les tableaux  
-- Astuces syntaxiques  
-- La méthode fetch()  
+- let vs var  (ok)
+- const (ok)
+- Les template strings  (ok)
+- Les différences entre les fonctions fléchées et les fonctions classiques  (ok)
+- spread & rest operator  (ok)
+- Les fonctions pures  (ok)
+- Les fonctions d'ordre supérieur  (ok)
+- Les tableaux  (ok)
+- Astuces syntaxiques  (ok)
+- La méthode fetch()  (ok)
 
 
 ## 2. Créer une app avec React
-- Qu'est-ce qu'une application web ?  
-- Utiliser React sans un bundler  
-- Un bundler, qu'est-ce que c'est ?  
-- Création d'une app web avec Vite et explication de l'architecture du dossier  
+- Qu'est-ce qu'une application web ?  (ok)
+- Utiliser React sans un bundler  (ok)
+- Un bundler, qu'est-ce que c'est ?  (ok)
+- Création d'une app web avec Vite et explication de l'architecture du dossier  (ok)
 
 ## 3. Les bases de React
-- Mise en place du dossier et des extensions  
-- Pourquoi faut-il toujours retourner un seul élément ?  
-- La syntaxe et les fonctionnalités JSX  
-- Notre premier composant  
-- Explication de React.StrictMode 
-- Utiliser des évènements  
-- Le state  
-- Les props  
+- Mise en place du dossier et des extensions  (ok)
+- Pourquoi faut-il toujours retourner un seul élément ?  (ok)
+- La syntaxe et les fonctionnalités JSX  (ok)
+- Notre premier composant  (ok)
+- Explication de React.StrictMode (ok)
+- Utiliser des évènements  (ok)
+- Le state (ok) 
+- Les props  (ok)
 - Utiliser du CSS  
-- Créer une liste d'éléments  
+- Créer une liste d'éléments  (ok)
 - Utiliser des images  
-- Rendu conditionnel avec if  
-- Rendu conditionnel avec une opération ternaire  
-- Rendu conditionnel avec une opération de court-circuit  
-- Exemple de toggle d'une classe HTML  
-- Utiliser useRef() pour une valeur persistante  
-- Utiliser useRef() pour sélectionner un élément  
+- Rendu conditionnel avec if  (ok)
+- Rendu conditionnel avec une opération ternaire  (ok)
+- Rendu conditionnel avec une opération de court-circuit  (ok)
+- Exemple de toggle d'une classe HTML  (ok)
+- Utiliser useRef() pour une valeur persistante  (ok)
+- Utiliser useRef() pour sélectionner un élément  (ok)
 - Les inputs contrôlés  
 - Les inputs incontrôlés  
 
 ## 4. React dans le détail
 - Les Fragments  
-- Les règles des hooks  
-- Le hook useEffect  
-- Le cycle de vie d'un composant  
-- La fonction de nettoyage  
+- Les règles des hooks  (ok)
+- Le hook useEffect  (ok) 
+- Le cycle de vie d'un composant  (ok)
+- La fonction de nettoyage  (ok)
 - Ajouter un évènement global  
 - Appeler une API  
 - Utiliser un observateur  
-- Utiliser setInterval  
+- Utiliser setInterval  (ok)
 - Sélectionner plusieurs éléments statiques  
 - Sélectionner une liste dynamique  
 - Comprendre les "props.children"  
