@@ -34,24 +34,24 @@
 - Les props  (ok)
 - Utiliser du CSS  
 - Créer une liste d'éléments  (ok)
-- Utiliser des images  
+- Utiliser des images  (ok)
 - Rendu conditionnel avec if  (ok)
 - Rendu conditionnel avec une opération ternaire  (ok)
 - Rendu conditionnel avec une opération de court-circuit  (ok)
 - Exemple de toggle d'une classe HTML  (ok)
 - Utiliser useRef() pour une valeur persistante  (ok)
 - Utiliser useRef() pour sélectionner un élément  (ok)
-- Les inputs contrôlés  
-- Les inputs incontrôlés  
+- Les inputs contrôlés  (ok)
+- Les inputs incontrôlés  (ok)
 
 ## 4. React dans le détail
-- Les Fragments  
+- Les Fragments  (ok)
 - Les règles des hooks  (ok)
 - Le hook useEffect  (ok) 
 - Le cycle de vie d'un composant  (ok)
 - La fonction de nettoyage  (ok)
-- Ajouter un évènement global  
-- Appeler une API  
+- Ajouter un évènement global  (ok)
+- Appeler une API  (ok)
 - Utiliser un observateur  
 - Utiliser setInterval  (ok)
 - Sélectionner plusieurs éléments statiques  
@@ -61,8 +61,19 @@
 - Le hook useMemo  
 - Comprendre useReducer  
 - Créer un hook personnalisé  
-- Utiliser des CSS Modules  
-- Utiliser TailwindCSS  
+- Utiliser des CSS Modules  (ok)
+- Utiliser TailwindCSS  (ok)
+
+
+- Utiliser un observateur  
+- Sélectionner plusieurs éléments statiques  
+- Sélectionner une liste dynamique  
+- Comprendre les "props.children"  
+- Utiliser memo et useCallback()  
+- Le hook useMemo  
+- Comprendre useReducer  
+- Créer un hook personnalisé  
+
 
 <!-- ## Créer des composants courants (pourrait être retiré)
 - Coder une fenêtre modale  
