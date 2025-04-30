@@ -52,26 +52,23 @@
 - La fonction de nettoyage  (ok)
 - Ajouter un évènement global  (ok)
 - Appeler une API  (ok)
-- Utiliser un observateur  
+- Utiliser un observateur  (à laisser)
 - Utiliser setInterval  (ok)
-- Sélectionner plusieurs éléments statiques  
-- Sélectionner une liste dynamique  
-- Comprendre les "props.children"  
+- Sélectionner plusieurs éléments statiques  (ok)
+- Sélectionner une liste dynamique  (ok)
+- Comprendre les "props.children"  (ok)
 - Utiliser memo et useCallback()  
 - Le hook useMemo  
-- Comprendre useReducer  
+- Comprendre useReducer  (ok)
 - Créer un hook personnalisé  
 - Utiliser des CSS Modules  (ok)
 - Utiliser TailwindCSS  (ok)
 
 
-- Utiliser un observateur  
-- Sélectionner plusieurs éléments statiques  
-- Sélectionner une liste dynamique  
-- Comprendre les "props.children"  
+
 - Utiliser memo et useCallback()  
-- Le hook useMemo  
-- Comprendre useReducer  
+- Le hook useMemo  (ok)
+
 - Créer un hook personnalisé  
 
 
