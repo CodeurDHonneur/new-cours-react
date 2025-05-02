@@ -95,7 +95,7 @@
 ## Redux Toolkit
 <!-- - Introduction et mise en place   -->
 <!-- - Architecture classique   -->
-- Envoyer une action avec dispatch  
+- Envoyer une action avec dispatch  (ok)
 <!-- - Créer l'UI du projet Fruity   -->
 <!-- - Création des données de l'inventaire   -->
 <!-- - Ajouter et enlever un fruit   -->
