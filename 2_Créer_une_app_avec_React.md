@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ## 📘 2. Créer une app avec React
+=======
+# 📘 2. Créer une app avec React
+>>>>>>> 4f132a7bf197bf994ea4249e75a8f92d1e6aa83c
 
 ### 🧠 Qu'est-ce qu'une application web ?
 
@@ -58,6 +62,7 @@ Oui, c’est possible ! On peut utiliser React en important directement les sc
 - pas de compilation automatique.
 
 ---
+
 ### ⚙️ Créer une app React avec **Vite** + explication de l’architecture
 
 #### 📦 Étapes d'installation
