@@ -1,8 +1,4 @@
-Parfait, tu veux structurer un petit cours clair et pédagogique pour introduire React et Vite. Voici une proposition bien organisée, avec des explications simples pour chaque point :
-
----
-
-## 📘 2. Créer une app avec React
+# 📘 2. Créer une app avec React
 
 ---
 
@@ -64,6 +60,7 @@ Oui, c’est possible ! On peut utiliser React en important directement les sc
 - pas de compilation automatique.
 
 ---
+
 ### ⚙️ Créer une app React avec **Vite** + explication de l’architecture
 
 #### 📦 Étapes d'installation
