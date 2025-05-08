@@ -57,7 +57,7 @@
 ## 🟥 Jour 4 – Router & Contexte (Sections 4 et 5)
 
 ### 4. React Router
-1. Mise en place de React Router
+1. 14
 2. Routes dynamiques
 3. Page 404
 4. Liens & `NavLink`
