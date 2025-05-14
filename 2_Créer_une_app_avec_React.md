@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 ## 📘 2. Créer une app avec React
-=======
-# 📘 2. Créer une app avec React
->>>>>>> 4f132a7bf197bf994ea4249e75a8f92d1e6aa83c
 
 ### 🧠 Qu'est-ce qu'une application web ?
 
