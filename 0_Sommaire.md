@@ -25,7 +25,7 @@
  
 ---
 
-## 🟩 Jour 2 
+## Jour 2 
 ### 3. Les bases de React (Partie 1)
 1. Les bases de React
 2. Syntaxe JSX
@@ -40,7 +40,7 @@
 
 ---
 
-## 🟨 Jour 3
+## Jour 3
 
 ### 3. Les bases de React (Partie 2)
 
@@ -55,7 +55,7 @@
 12. TP : Générateur de shadow (Exercice de maison : todo list)
 ---
 
-## 🟥 Jour 4 et début jour 5
+## Jour 4 et début jour 5
 
 ### 4. React Router
 1. 14
@@ -72,3 +72,9 @@
 > **Objectif du jour :** Naviguer entre les pages avec Router et partager l’état global avec le Context API.
 
 ---
+
+## Jour 5 (S2) et jour 6
+- TP: Application React + Firebase,React Router Dom et Redux-Toolkit
+
+## Jour 7 à 10
+- Projet de fin et présentation
