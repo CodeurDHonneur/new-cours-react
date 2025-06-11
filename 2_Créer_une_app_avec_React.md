@@ -1,6 +1,6 @@
-## 📘 2. Créer une app avec React
+##  2. Créer une app avec React
 
-### 🧠 Qu'est-ce qu'une application web ?
+###  Qu'est-ce qu'une application web ?
 
 Une **application web** est un programme accessible via un navigateur. Contrairement à un site web classique qui affiche simplement des pages statiques (HTML/CSS), une app web peut :
 - gérer des interactions complexes (formulaires, navigation dynamique…),
