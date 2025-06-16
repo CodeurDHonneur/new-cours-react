@@ -74,7 +74,7 @@
 ---
 
 ## Jour 5 (S2) et jour 6
-- TP: Application React + Firebase,React Router Dom et Redux-Toolkit
+- TP
 
 ## Jour 7 à 10
 - Projet de fin et présentation
